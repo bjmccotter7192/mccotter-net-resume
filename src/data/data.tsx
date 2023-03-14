@@ -73,8 +73,8 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        A qualified professional working currently as a <strong className="text-stone-100">Staff Software Engineer</strong> 
-        for <strong className="text-stone-100">Ad Hoc</strong> who focuses on CI/CD development, Full Stack Software Engineering, 
+        A qualified professional working currently as a <strong className="text-stone-100">Staff Software Engineer</strong> for <strong className="text-stone-100">Ad Hoc</strong> who 
+        focuses on CI/CD development, Full Stack Software Engineering, 
         and a growing interest in data & machine learning. Strong individual with an automation first mentality, passion for programming, 
         and have tremendous interpersonal skills.
       </p>
