@@ -44,8 +44,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'William McCotter Resume',
+  description: "This is the full resume for William McCotter.",
 };
 
 /**
@@ -69,19 +69,20 @@ export type SectionId = typeof SectionId[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `I'm William McCotter.`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        A qualified professional working currently as a <strong className="text-stone-100">Staff Software Engineer</strong> 
+        for <strong className="text-stone-100">Ad Hoc</strong> who focuses on CI/CD development, Full Stack Software Engineering, 
+        and a growing interest in data & machine learning. Strong individual with an automation first mentality, passion for programming, 
+        and have tremendous interpersonal skills.
       </p>
-      <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
+      {/* <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
         plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
         <strong className="text-stone-100">Vancouver Island</strong>.
-      </p>
+      </p> */}
     </>
   ),
   actions: [
@@ -108,12 +109,12 @@ export const aboutData: About = {
   to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
   in.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: OfficeBuildingIcon},
+    {label: 'Location', text: 'Columbia, MO', Icon: MapIcon},
+    {label: 'Age', text: '30', Icon: CalendarIcon},
+    {label: 'Nationality', text: 'United States of America', Icon: FlagIcon},
+    {label: 'Interests', text: 'Disc Golf, Star Wars, LOTR, Baseball/Softball', Icon: SparklesIcon},
+    {label: 'Study', text: 'University of Maryland Eastern Shore', Icon: AcademicCapIcon},
+    {label: 'Employment', text: 'Ad Hoc LLC', Icon: OfficeBuildingIcon},
   ],
 };
 
@@ -121,37 +122,37 @@ export const aboutData: About = {
  * Skills section
  */
 export const skills: SkillGroup[] = [
-  {
-    name: 'Spoken languages',
-    skills: [
-      {
-        name: 'English',
-        level: 10,
-      },
-      {
-        name: 'French',
-        level: 4,
-      },
-      {
-        name: 'Spanish',
-        level: 3,
-      },
-    ],
-  },
+  // {
+  //   name: 'Spoken languages',
+  //   skills: [
+  //     {
+  //       name: 'English',
+  //       level: 10,
+  //     },
+  //     {
+  //       name: 'French',
+  //       level: 4,
+  //     },
+  //     {
+  //       name: 'Spanish',
+  //       level: 3,
+  //     },
+  //   ],
+  // },
   {
     name: 'Frontend development',
     skills: [
       {
         name: 'React',
-        level: 9,
+        level: 7,
       },
       {
         name: 'Typescript',
         level: 7,
       },
       {
-        name: 'GraphQL',
-        level: 6,
+        name: 'Angular',
+        level: 5,
       },
     ],
   },
@@ -159,36 +160,40 @@ export const skills: SkillGroup[] = [
     name: 'Backend development',
     skills: [
       {
-        name: 'Node.js',
+        name: 'Python',
         level: 8,
       },
       {
-        name: 'Rust',
+        name: 'C#',
+        level: 5,
+      },
+      {
+        name: 'Java',
         level: 5,
       },
       {
         name: 'Golang',
-        level: 4,
-      },
-    ],
-  },
-  {
-    name: 'Mobile development',
-    skills: [
-      {
-        name: 'React Native',
-        level: 9,
-      },
-      {
-        name: 'Flutter',
-        level: 4,
-      },
-      {
-        name: 'Swift',
         level: 3,
       },
     ],
   },
+  // {
+  //   name: 'Mobile development',
+  //   skills: [
+  //     {
+  //       name: 'React Native',
+  //       level: 9,
+  //     },
+  //     {
+  //       name: 'Flutter',
+  //       level: 4,
+  //     },
+  //     {
+  //       name: 'Swift',
+  //       level: 3,
+  //     },
+  //   ],
+  // },
 ];
 
 /**
