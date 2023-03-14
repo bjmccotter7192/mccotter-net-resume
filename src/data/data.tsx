@@ -82,7 +82,7 @@ export const heroData: Hero = {
   ),
   actions: [
     {
-      href: '/assets/resume.pdf',
+      href: '/assets/william_mccotter_resume.pdf',
       text: 'Resume',
       primary: true,
       Icon: DownloadIcon,
