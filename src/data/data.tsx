@@ -284,12 +284,60 @@ export const education: TimelineItem[] = [
     title: 'Bachelors of Science - Computer Science',
     content: <p>Focused on web development but had classes ranging from HTML, JAVA, COBOL, Database Management, Assembly Language, and business classes.</p>,
   },
+  {
+    date: 'October 2022',
+    location: 'Slack',
+    title: 'Slack Certified Developer Certified',
+    content: <p>Learned how to build, deploy, and maintain slack applications using the Slack SDKs, Web Client, and admin portal. 
+      Created a slack channel archiving bot that would scrape through all the public channels and mark any 
+      inactive channels for the past 60 days. This runs on a 60 day interval and once ran the second time will find the inactivity
+      message and archive the channel automatically.</p>,
+  },
 ];
 
 export const experience: TimelineItem[] = [
   {
+    date: 'October 2022 - Present',
+    location: 'Ad Hoc LLC - CTO Team',
+    title: 'Staff Software Engineer - Full Stack',
+    content: (
+      <ul>
+        <li>Researched and presented finding around WebAuthn and Passwordless Authentication</li>
+        <li>Created multiple write ups, proof of concepts, and presentations to share my knowledge of the topic.</li>
+        <li>Created a Slack bot to automatically archive channels that have been inactive for 60 days.</li>
+        <li>Researching the pros and cons of how and why to use Salesforce in the government space.</li>
+        <li>Kanban style team "small team just getting started"</li>
+      </ul>
+    ),
+  },
+  {
+    date: 'September 2021 - October 2022',
+    location: 'Ad Hoc LLC - Platform Spike Team / Forms Library Team (VA)',
+    title: 'Senior Software Engineer - Dev Ops',
+    content: (
+      <ul>
+        <li>Worked on the underlying forms package of va.gov</li>
+        <li>Took outdated react-json-schema-form that was forked from an older version and replaced it with a more modern
+          framework like Formik. 
+        </li>
+        <li>Created all the Github Actions for the team</li>
+        <ol>
+          <li>Automated Test/Build/Deploy to NPM</li>
+          <li>Automated Code Documentation using api-extractor</li>
+        </ol>
+        <li>Worked in the new package to the monolith front end of va.gov and had to deal with React Router version issues,
+          automated flakey tests, and build errors
+        </li>
+        <li>Increased the time to learn for the new system from a couple months to a couple weeks since Front End Engineers 
+          are way more familiar with React components compared to the JSON configuration building of react-json-schema-form
+        </li>
+        <li>Agile cross functional team with 3 engineers, 2 designers, 1 product manager, and 1 dev ops engineer</li>
+      </ul>
+    ),
+  },
+  {
     date: 'February 2021 - September 2021',
-    location: 'Veterans United Home Loans',
+    location: 'Veterans United Home Loans  - Platform Engineering',
     title: 'IT Team Lead',
     content: (
       <ul>
@@ -313,7 +361,7 @@ export const experience: TimelineItem[] = [
   },
   {
     date: 'June 2019 - Febuary 2021',
-    location: 'Veterans United Home Loans',
+    location: 'Veterans United Home Loans - Platform Engineering',
     title: 'Application Delivery Engineer',
     content: (
       <ul>
@@ -334,7 +382,7 @@ export const experience: TimelineItem[] = [
   },
   {
     date: 'July 2016 - June 2019',
-    location: 'Veterans United Home Loans',
+    location: 'Veterans United Home Loans - Software Services',
     title: 'Full Stack Software Engineer',
     content: (
       <ul>
