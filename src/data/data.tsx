@@ -120,23 +120,23 @@ export const aboutData: About = {
  * Skills section
  */
 export const skills: SkillGroup[] = [
-  // {
-  //   name: 'Spoken languages',
-  //   skills: [
-  //     {
-  //       name: 'English',
-  //       level: 10,
-  //     },
-  //     {
-  //       name: 'French',
-  //       level: 4,
-  //     },
-  //     {
-  //       name: 'Spanish',
-  //       level: 3,
-  //     },
-  //   ],
-  // },
+  {
+    name: 'Spoken languages',
+    skills: [
+      {
+        name: 'English',
+        level: 7,
+      },
+      {
+        name: 'French',
+        level: 2,
+      },
+      {
+        name: 'Spanish',
+        level: 2,
+      },
+    ],
+  },
   {
     name: 'Frontend development',
     skills: [
@@ -175,23 +175,27 @@ export const skills: SkillGroup[] = [
       },
     ],
   },
-  // {
-  //   name: 'Mobile development',
-  //   skills: [
-  //     {
-  //       name: 'React Native',
-  //       level: 9,
-  //     },
-  //     {
-  //       name: 'Flutter',
-  //       level: 4,
-  //     },
-  //     {
-  //       name: 'Swift',
-  //       level: 3,
-  //     },
-  //   ],
-  // },
+  {
+    name: 'Dev Ops',
+    skills: [
+      {
+        name: 'Ansible',
+        level: 4,
+      },
+      {
+        name: 'IaC',
+        level: 7,
+      },
+      {
+        name: 'Kubernetes',
+        level: 5,
+      },
+      {
+        name: 'Github Actions',
+        level: 5,
+      },
+    ],
+  },
 ];
 
 /**
@@ -343,23 +347,23 @@ export const contact: ContactSection = {
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'bj.mccotter@gmail.com',
+      href: 'mailto:bj.mccotter@gmail.com',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
+      text: 'Columbia, MO',
+      href: 'https://www.google.ca/maps/place/Columbia,+MO/@38.9466066,-92.4008786,12z',
     },
     {
-      type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
+      type: ContactType.LinkedIn,
+      text: 'William McCotter',
+      href: 'https://www.linkedin.com/in/william-mccotter-455045188/',
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'bjmccotter7192',
+      href: 'https://github.com/bjmccotter7192',
     },
   ],
 };
