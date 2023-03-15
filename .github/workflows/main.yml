@@ -31,14 +31,14 @@ jobs:
           images: bjmccotter7192/mccotter-net-ui
       
       - name: Build and push Docker image
+        env:
+          SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
         uses: docker/build-push-action@ad44023a93711e3deb337508980b4b5e9bcdc5dc
         with:
           context: .
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-          secrets: |
-            "SENDGRID_API_KEY=${{ secrets.SENDGRID_API_KEY }}"
           
   deploy_to_server:
     name: Deploy new containers to server over SSH
