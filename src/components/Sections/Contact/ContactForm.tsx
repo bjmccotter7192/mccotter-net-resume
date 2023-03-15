@@ -1,4 +1,5 @@
 import {FC, memo, useCallback, useMemo, useState} from 'react';
+// import nodemailer from "nodemailer";
 
 interface FormData {
   name: string;
@@ -32,10 +33,38 @@ const ContactForm: FC = memo(() => {
   const handleSendMessage = useCallback(
     async (event: React.FormEvent<HTMLFormElement>) => {
       event.preventDefault();
+
+      console.log(data)
       /**
        * This is a good starting point to wire up your form submission logic
        * */
-      console.log('Data to send: ', data);
+
+      // create reusable transporter object using the default SMTP transport
+      // let transporter = nodemailer.createTransport({
+      //   host: process.env.MAILER_HOST,
+      //   port: 587,
+      //   secure: false, // true for 465, false for other ports
+      //   auth: {
+      //     user: process.env.MAILER_USER,
+      //     pass: process.env.MAILER_PASS,
+      //   },
+      // });
+
+      // // send mail with defined transport object
+      // let info = await transporter.sendMail({
+      //   from: '"BJ McCotter" <bj@mccotter.net>',
+      //   to: data.email,
+      //   subject: "Hello " + data.name,
+      //   text: data.message,
+      // });
+
+      // console.log("Message sent: %s", info.messageId);
+      // // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
+
+      // // Preview only available when sending through an Ethereal account
+      // console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
+
+      // console.log('Data to send: ', data);
     },
     [data],
   );
