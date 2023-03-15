@@ -35,6 +35,14 @@ const ContactForm: FC = memo(() => {
       event.preventDefault();
 
       console.log(data)
+
+      let result = await fetch('/api/mail', {
+        method: 'POST',
+        body: JSON.stringify(data)
+      });
+
+      console.log(result);
+      
       /**
        * This is a good starting point to wire up your form submission logic
        * */
