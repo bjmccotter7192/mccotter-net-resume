@@ -44,7 +44,7 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'William (BJ) McCotter',
+  title: 'McCotter.net',
   description: "This is the full resume for William (BJ) McCotter.",
 };
 
@@ -69,7 +69,7 @@ export type SectionId = typeof SectionId[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm William McCotter.`,
+  name: `William McCotter`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
@@ -100,7 +100,9 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `CHANGE THIS DESCRIPTION`,
+  description: `Hello my name is William McCotter but most people call me BJ. I live in Columbia, Missouri
+  but was originally from the Eastern Shore of Maryland. I love sports, code, and tech, and hope that I can bring
+  some of my passions to your company.`,
   aboutItems: [
     {label: 'Location', text: 'Columbia, MO', Icon: MapIcon},
     {label: 'Age', text: '30', Icon: CalendarIcon},
@@ -116,36 +118,19 @@ export const aboutData: About = {
  */
 export const skills: SkillGroup[] = [
   {
-    name: 'Frontend development',
-    skills: [
-      {
-        name: 'React',
-        level: 7,
-      },
-      {
-        name: 'Angular',
-        level: 5,
-      },
-      {
-        name: 'Typescript',
-        level: 7,
-      },
-    ],
-  },
-  {
     name: 'Dev Ops',
     skills: [
       {
         name: 'Github Actions',
-        level: 5,
+        level: 8,
       },
       {
-        name: 'Ansible',
-        level: 4,
+        name: 'Gitlab-ci',
+        level: 6,
       },
       {
         name: 'Kubernetes',
-        level: 5,
+        level: 4,
       },
     ],
   },
@@ -157,12 +142,12 @@ export const skills: SkillGroup[] = [
         level: 8,
       },
       {
-        name: 'C#',
+        name: 'C# / Java',
         level: 5,
       },
       {
-        name: 'Node.js',
-        level: 5,
+        name: 'Golang',
+        level: 3,
       },
     ],
   },
@@ -171,7 +156,7 @@ export const skills: SkillGroup[] = [
     skills: [
       {
         name: 'React',
-        level: 7,
+        level: 8,
       },
       {
         name: 'Typescript',
@@ -271,27 +256,6 @@ export const portfolioItems: PortfolioItem[] = [
     description: 'Give a short description of your project here.',
     url: 'https://timbaker.me',
     image: porfolioImage11,
-  },
-];
-
-/**
- * Resume section -- TODO: Standardize resume contact format or offer MDX
- */
-export const education: TimelineItem[] = [
-  {
-    date: 'December 2015',
-    location: 'University of Maryland Eastern Shore',
-    title: 'Bachelors of Science - Computer Science',
-    content: <p>Focused on web development but had classes ranging from HTML, JAVA, COBOL, Database Management, Assembly Language, and business classes.</p>,
-  },
-  {
-    date: 'October 2022',
-    location: 'Slack',
-    title: 'Slack Certified Developer Certified',
-    content: <p>Learned how to build, deploy, and maintain slack applications using the Slack SDKs, Web Client, and admin portal. 
-      Created a slack channel archiving bot that would scrape through all the public channels and mark any 
-      inactive channels for the past 60 days. This runs on a 60 day interval and once ran the second time will find the inactivity
-      message and archive the channel automatically.</p>,
   },
 ];
 
@@ -420,6 +384,27 @@ export const experience: TimelineItem[] = [
         <li>Converting old copper lines with new FO</li>
       </ul>
     ),
+  },
+];
+
+/**
+ * Resume section -- TODO: Standardize resume contact format or offer MDX
+ */
+export const education: TimelineItem[] = [
+  {
+    date: 'December 2015',
+    location: 'University of Maryland Eastern Shore',
+    title: 'Bachelors of Science - Computer Science',
+    content: <p>Focused on web development but had classes ranging from HTML, JAVA, COBOL, Database Management, Assembly Language, and business classes.</p>,
+  },
+  {
+    date: 'October 2022',
+    location: 'Slack',
+    title: 'Slack Certified Developer Certified',
+    content: <p>Learned how to build, deploy, and maintain slack applications using the Slack SDKs, Web Client, and admin portal. 
+      Created a slack channel archiving bot that would scrape through all the public channels and mark any 
+      inactive channels for the past 60 days. This runs on a 60 day interval and once ran the second time will find the inactivity
+      message and archive the channel automatically.</p>,
   },
 ];
 
