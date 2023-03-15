@@ -37,8 +37,8 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-          secrets:
-            SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
+          secrets: |
+            "SENDGRID_API_KEY=${{ secrets.SENDGRID_API_KEY }}"
           
   deploy_to_server:
     name: Deploy new containers to server over SSH
