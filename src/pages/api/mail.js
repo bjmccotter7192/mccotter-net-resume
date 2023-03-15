@@ -1,10 +1,10 @@
-import { isBooleanObject } from 'util/types';
-
+const dotenv = require('dotenv')
 const mail = require('@sendgrid/mail');
 
+dotenv.config()
 mail.setApiKey(process.env.SENDGRID_API_KEY);
 
-export default async (req, res) => {
+export default async function handler(req, res) {
   const body = JSON.parse(req.body);
 
   const message = `
@@ -15,7 +15,7 @@ export default async (req, res) => {
 
   await mail.send({
     to: "bj@mccotter.net",
-    from: body.email,
+    from: "bj@mccotter.net",
     subject: "Hello there, " + body.name,
     text: body.message,
     html: message.replace(/\r\n/g, '<br>'),

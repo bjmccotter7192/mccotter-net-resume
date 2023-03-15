@@ -34,45 +34,19 @@ const ContactForm: FC = memo(() => {
     async (event: React.FormEvent<HTMLFormElement>) => {
       event.preventDefault();
 
-      console.log(data)
-
-      let result = await fetch('/api/mail', {
-        method: 'POST',
-        body: JSON.stringify(data)
-      });
-
-      console.log(result);
-      
-      /**
-       * This is a good starting point to wire up your form submission logic
-       * */
-
-      // create reusable transporter object using the default SMTP transport
-      // let transporter = nodemailer.createTransport({
-      //   host: process.env.MAILER_HOST,
-      //   port: 587,
-      //   secure: false, // true for 465, false for other ports
-      //   auth: {
-      //     user: process.env.MAILER_USER,
-      //     pass: process.env.MAILER_PASS,
-      //   },
-      // });
-
-      // // send mail with defined transport object
-      // let info = await transporter.sendMail({
-      //   from: '"BJ McCotter" <bj@mccotter.net>',
-      //   to: data.email,
-      //   subject: "Hello " + data.name,
-      //   text: data.message,
-      // });
-
-      // console.log("Message sent: %s", info.messageId);
-      // // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
-
-      // // Preview only available when sending through an Ethereal account
-      // console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
-
-      // console.log('Data to send: ', data);
+      try {
+        const response = await fetch('/api/mail', {
+          method: 'post',
+          body: JSON.stringify(data),
+        });
+        if (!response.ok) {
+          throw new Error(`Invalid response: ${response.status}`);
+        }
+        alert('Thanks for contacting us, we will get back to you soon!');
+      } catch (err) {
+        console.error(err);
+        alert("We can't submit the form, try again later?");
+      }
     },
     [data],
   );
