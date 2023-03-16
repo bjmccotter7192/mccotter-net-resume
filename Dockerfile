@@ -2,9 +2,6 @@ FROM node:alpine
 
 WORKDIR /app 
 
-ARG SENDGRID_API_KEY="localhost"
-ENV SENDGRID_API_KEY=${SENDGRID_API_KEY}
-
 COPY package.json /app 
 
 COPY yarn.lock /app
