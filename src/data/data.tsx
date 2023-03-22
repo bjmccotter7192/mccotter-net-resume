@@ -18,7 +18,7 @@ import porfolioImage1 from '../images/portfolio/punta-cuna.jpg';
 import porfolioImage2 from '../images/portfolio/vegas-trip-1.jpg';
 import porfolioImage3 from '../images/portfolio/vegas-trip-2.jpg';
 import porfolioImage4 from '../images/portfolio/lego-land-orlando.jpg';
-import profilepic from '../images/FakeProfilePic.jpg';
+import profilepic from '../images/selfie-pic.jpg';
 import testimonialImage from '../images/nasa-hubble-dark.jpg';
 import {
   About,
